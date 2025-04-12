@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBetzada.MainPage"
+             BackgroundColor="white"
+             BackgroundImageSource="fundo.png"
+             
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="0,0"
+            Spacing="0">
+
+            <Image 
+                HeightRequest="85"
+                Aspect="AspectFill"
+                />
+
+
+
+            <Grid
+               ColumnDefinitions="*,*,*"
+               RowDefinitions="*,*,*"
+               Padding="15">
+
+                <Label
+                    Grid.Column="0" Grid.Row="0"
+                    Text="Saldo"
+                    Style="{StaticResource lblGeralClaro}"
+                   />
+
+                <Label
+                    x:Name="lblSaldo"
+                    Grid.Column="1" Grid.Row="0"
+                    Text="0"
+                    Style="{StaticResource lblDestaqueClaro}"
+                     />
+                <Label
+                    Grid.Column="0" Grid.Row="1"
+                    Text="Aposta"
+                    Style="{StaticResource lblGeralClaro}"
+                    />
+
+                <Entry
+                    Grid.Column="1" Grid.Row="1"
+                    x:Name="txtAposta"
+                    Style="{StaticResource txtGeral2}"
+                    />
+
+                <Button
+                    x:Name="btnIniciar"
+                    Grid.Column="2"
+                    Grid.RowSpan="2"
+                    Text="Iniciar"
+                    Style="{StaticResource btn}"
+                    Clicked="btnIniciar_Clicked"
+                    />
+
+                <Label
+                    x:Name="lblN1"  
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    FontFamily="Lobster-Regular"
+                    FontAttributes="Bold"
+                    Text="7"
+                    Style="{StaticResource lblNum}"
+                    />
+
+                <Label
+                    x:Name="lblN2"  
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    FontFamily="Lobster-Regular"
+                    FontAttributes="Bold"
+                    Text="7" 
+                    Style="{StaticResource lblNum}"
+                    />
+
+                <Label
+                    x:Name="lblN3"  
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    FontFamily="Lobster-Regular"
+                    FontAttributes="Bold"
+                    Text="7"
+                    Style="{StaticResource lblNum}"
+                    />
+
+            </Grid>
+
+            <Button                
+                x:Name="btnParar"
+                Text="Parar"
+                Style="{StaticResource btn}"
+                Margin="20,-65,20,0"
+                Clicked="btnParar_Clicked"
+                />
+
+            <Label
+                x:Name="lblMsg"
+                Text="Mensagem"
+                Style="{StaticResource lblDestaqueClaro}"
+                Margin="30,10,30,0"
+                />
+
+            <Label
+                x:Name="lblMsgResult"
+                Text=""
+                Style="{StaticResource lblDestaqueClaro}"
+                Margin="30,10,30,0"
+                />
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

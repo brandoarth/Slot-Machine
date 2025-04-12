@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBetzada.TelaSaldo"
+             Title="Saldo">
+    <VerticalStackLayout
+        Padding="10"
+        Spacing="15"
+        >
+        <Label 
+            Text="Saldo Atual"
+            Style="{StaticResource lblGeral}"
+            />
+
+        <Label
+            x:Name="lblSaldoAtual"
+            Text="0"
+            Style="{StaticResource lblDestaque}"
+        />
+
+        <Label 
+            Text="Valor"
+            Style="{StaticResource lblGeral}"
+            />
+
+        <Entry
+            x:Name="txtValor"
+            Placeholder="Digite valor maior que zero"
+            Style="{StaticResource txtGeral}"
+            />
+
+        <Grid
+            ColumnDefinitions="*,*"
+            RowDefinitions="*">
+
+            <Button
+                x:Name="btnDepositar"
+                Text="Depositar"
+                Grid.Column="0"
+                Margin="10"
+                Clicked="btnDepositar_Clicked"
+                />
+
+            <Button
+                x:Name="btnSacar"
+                Text="Sacar"
+                Grid.Column="1"
+                Margin="10"
+                Clicked="btnSacar_Clicked"
+                />
+
+        </Grid>
+
+        <Label
+            x:Name="lblMsg"
+            Text="..."
+            Style="{StaticResource lblGeral}"
+            />
+
+    </VerticalStackLayout>
+</ContentPage>

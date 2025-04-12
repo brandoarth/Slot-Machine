@@ -1,0 +1,76 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppBetzada"
+             x:Class="AppBetzada.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+
+            <Style x:Key="lblGeral" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="TextColor" Value="Darkred"/>
+            </Style>
+
+
+            <Style x:Key="lblGeralClaro" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="TextColor" Value="Gold"/>
+                <Setter Property="Margin" Value="1"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
+            <Style x:Key="lblNum" TargetType="Label" BasedOn="{StaticResource lblGeralClaro}">
+                <Setter Property="FontSize" Value="150"/>
+                <Setter Property="TextColor" Value="gold"/>
+            </Style>
+
+            <Style x:Key="lblDestaqueClaro" TargetType="Label" BasedOn="{StaticResource lblGeralClaro}">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="lblDestaque" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="TextColor" Value="Gold"/>
+            </Style>
+
+            <Style x:Key="txtGeral" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="Margin" Value="20,0,20,0"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+
+            <Style x:Key="txtGeral2" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="28"/>
+                <Setter Property="TextColor" Value="DarkRed"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+                <Setter Property="BackgroundColor" Value="Gold"/>
+                <Setter Property="HeightRequest" Value="60"/>
+            </Style>
+
+            <Style x:Key="btn" TargetType="Button">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BorderWidth" Value="7"/>
+                <Setter Property="BackgroundColor" Value="DarkRed"/>
+                <Setter Property="BorderColor" Value="Gold"/>
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
